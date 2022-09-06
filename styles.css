@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.logo {
+  width: 50px;
+}
+
+.green-color {
+  background: #a1dd70;
+}
+
+.white-color {
+  background: #fdfff0;
+}
+
+.beige-color {
+  background: rgb(232, 236, 213);
+}
+
+.red-color {
+  background: #a23131;
+}
+
+body {
+  background-color: #a1dd70;
+  color: darkslategray;
+  line-height: 1.75rem;
+  font-size: 22px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.recipe-section {
+  margin: 150px 0;
+}
+
+.background-nav {
+  background: rgba(232, 236, 213, 0.9);
+}
+
+.nav-top {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+}
+
+.recipe-image {
+  border-radius: 50px;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  .recipe-image {
+    width: 100%;
+  }
+}
+
+.boxty {
+  background-image: url("images/boxty.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: padding-box;
+}
