@@ -14,7 +14,7 @@ h1 {
 }
 
 .green-color {
-  background: #a1dd70;
+  background: rgb(161, 221, 112);
 }
 
 .white-color {
@@ -30,7 +30,12 @@ h1 {
 }
 
 body {
-  background-color: #a1dd70;
+  background-image: url("images/background-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 1000px rgba(161, 221, 112, 0.8);
   color: darkslategray;
   line-height: 1.75rem;
   font-size: 22px;
