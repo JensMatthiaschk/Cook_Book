@@ -1,3 +1,5 @@
+/*fonts: 'Fira Sans', 'Playfair Display', Ranga*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +7,12 @@
 }
 
 h1 {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  font-family: 'Ranga', sans-serif;
+  font-size: 6rem;
+  margin: 150px 0 0;
   text-align: center;
 }
-.logo {
+nav .logo {
   width: 50px;
 }
 
@@ -29,38 +32,60 @@ h1 {
   background: #a23131;
 }
 
+
+
 body {
-  background-image: url("images/background-image.jpg");
+  background-image: linear-gradient(rgba(161, 221, 112, 0.8), rgba(161, 221, 112, 0.8)), url("images/background-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  box-shadow: inset 0 0 0 1000px rgba(161, 221, 112, 0.8);
+  /* box-shadow: inset 0 0 0 1000px rgba(161, 221, 112, 0.8); */
   color: darkslategray;
   line-height: 1.75rem;
   font-size: 22px;
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 h2 {
+  font-size: 40px;
   margin-bottom: 30px;
+  font-family: 'Playfair Display', sans-serif;
 }
 
-.recipe-section {
+h3 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 34px;
+  margin: 10px 0 30px;
+}
+
+
+nav.nav-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 80px;
+  background-color: rgba(232, 236, 213, 0.8);
+  z-index: 1;
+}
+
+/* .recipe-section {
   margin: 150px 0;
-}
+} */
 
-.background-nav {
+/* .background-nav {
   background: rgba(232, 236, 213, 0.9);
-}
+} */
 
-.nav-top {
+/* .nav-top {
   padding-top: 0;
   padding-bottom: 0;
   background-color: transparent;
-}
+} */
 
 .recipe-image {
-  border-radius: 50px;
+  border-radius: 20px;
 
   width: 100%;
   margin-bottom: 30px;
@@ -81,12 +106,15 @@ h2 {
   top: 0;
   background: black;
   color: white;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   font-family: sans-serif;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: visibility 0s, opacity 0.5s linear;
   transition: visibility 0s, opacity 0.5s linear;
+  border-radius: 20px 0 20px 0;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 /* Hover on Parent Container */
@@ -95,7 +123,7 @@ h2 {
 }
 
 .image-content:hover div {
-  width: 150px;
+  width: 200px;
   padding: 8px 15px;
   visibility: visible;
   opacity: 0.7;
@@ -107,9 +135,21 @@ h2 {
   }
 }
 
-.boxty {
-  background-image: url("images/boxty.jpg");
+.recipe-section {
+  margin: 150px 0;
+  background-image: url("images/cutting-board.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: padding-box;
+  border-radius: 20px;
+  padding: 20px;
+  border: solid 10px;
+}
+
+.share-btn {
+  margin: 20px 0;
+  padding: 8px 15px;
+  align-items: center;
+  font-size: 1.5rem;
+  border: 1px solid #a1a19f;
 }
