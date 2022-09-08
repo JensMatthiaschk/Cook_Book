@@ -7,8 +7,10 @@
 }
 
 h1 {
-  font-family: 'Ranga', sans-serif;
+  color: #a23131;
+  font-family: "Ranga", sans-serif;
   font-size: 6rem;
+  font-weight: 900;
   margin: 150px 0 0;
   text-align: center;
 }
@@ -32,10 +34,12 @@ nav .logo {
   background: #a23131;
 }
 
-
-
 body {
-  background-image: linear-gradient(rgba(161, 221, 112, 0.8), rgba(161, 221, 112, 0.8)), url("images/background-image.jpg");
+  background-image: linear-gradient(
+      rgba(161, 221, 112, 0.8),
+      rgba(161, 221, 112, 0.8)
+    ),
+    url("images/background-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,21 +49,20 @@ body {
   line-height: 1.75rem;
   font-size: 22px;
   font-weight: 500;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
 }
 
 h3 {
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 34px;
   margin: 10px 0 30px;
 }
-
 
 nav.nav-top {
   position: fixed;
@@ -70,19 +73,9 @@ nav.nav-top {
   z-index: 1;
 }
 
-/* .recipe-section {
-  margin: 150px 0;
-} */
-
-/* .background-nav {
-  background: rgba(232, 236, 213, 0.9);
-} */
-
-/* .nav-top {
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: transparent;
-} */
+.nav-item {
+  padding-left: 15px;
+}
 
 .recipe-image {
   border-radius: 20px;
@@ -104,7 +97,7 @@ nav.nav-top {
 .image-content div {
   position: absolute;
   top: 0;
-  background: black;
+  background: darkslategray;
   color: white;
   /* margin-bottom: 5px; */
   font-family: sans-serif;
@@ -114,7 +107,7 @@ nav.nav-top {
   transition: visibility 0s, opacity 0.5s linear;
   border-radius: 20px 0 20px 0;
   text-align: center;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 /* Hover on Parent Container */
@@ -135,6 +128,53 @@ nav.nav-top {
   }
 }
 
+.carousel-inner > .carousel-item > img {
+  border-radius: 20px;
+  object-fit: cover;
+  width: 540px;
+  height: 660px;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  color: #fdfff0;
+}
+.carousel-caption > h5 {
+  margin-bottom: 0;
+  border-radius: 5px 5px 0 0;
+}
+.carousel-caption > p {
+  margin-bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+.carousel-caption > h5,
+.carousel-caption > p {
+  background-color: rgb(47 79 79 / 65%);
+}
+.carousel-control-next-icon {
+  border-radius: 50%;
+  background-color: darkslategray;
+}
+
+.carousel-control-prev-icon {
+  border-radius: 50%;
+  background-color: darkslategray;
+}
+
+.carousel-control-next {
+  /* background-color: darkslategray; */
+  left: 635.25px;
+}
+
+.carousel-control-prev {
+  /* background-color: darkslategray; */
+  left: -94.25px;
+}
+.hero-gallery {
+  width: 635px;
+  margin: 50px auto 0;
+}
+
 .recipe-section {
   margin: 150px 0;
   background-image: url("images/cutting-board.jpg");
@@ -144,6 +184,7 @@ nav.nav-top {
   border-radius: 20px;
   padding: 20px;
   border: solid 10px;
+  box-shadow: 5px 5px 15px darkslategray;
 }
 
 .share-btn {
@@ -151,5 +192,34 @@ nav.nav-top {
   padding: 8px 15px;
   align-items: center;
   font-size: 1.5rem;
-  border: 1px solid #a1a19f;
+  border: 2px solid darkslategray;
+}
+
+#porridge,
+#boxty,
+#detroit-pizza,
+#steak-eggs {
+  bottom: 100px;
+  position: relative;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.social-media-icon {
+  color: #a23131;
+  margin: 0 40px;
+  width: 50px;
+}
+
+#connect {
+  margin-bottom: 100px;
 }
