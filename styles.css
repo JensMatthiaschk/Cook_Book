@@ -79,7 +79,6 @@ nav.nav-top {
 
 .recipe-image {
   border-radius: 20px;
-
   width: 100%;
   margin-bottom: 30px;
 }
@@ -122,32 +121,97 @@ nav.nav-top {
   opacity: 0.7;
 }
 
-@media only screen and (max-width: 576px) {
-  .recipe-image {
-    width: 100%;
-  }
+/* Media querie start */
+
+@media (max-width: 776px) {
+h1 {
+  font-size: 3rem;
+  margin: 100px 0 0;
+}
+  
+h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
+h3 {
+  font-size: 26px;
+  margin: 5px 0 15px;
+}
+
+body {
+  line-height: 1.5rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.recipe-image {
+    width: 100%;
+  }
+
 .carousel-inner > .carousel-item > img {
-  border-radius: 20px;
+  max-height: 400px;
+}
+.carousel-inner {
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.recipe-section {
+  margin: 50px 0;
+}
+
+.social-media-icon {
+  margin: 0 5px;
+}
+
+.share-btn {
+  font-size: 0.6rem;
+  width: 120px;
+  height: 60px;
+}
+
+#porridge,
+#boxty,
+#detroit-pizza,
+#steak-eggs {
+  bottom: 50px;
+  position: relative;
+}
+
+}
+/* Media querie end */
+
+.carousel-inner > .carousel-item > img {
   object-fit: cover;
-  width: 540px;
-  height: 660px;
+  width: 650px;
+  height: 650px;
   overflow: hidden;
+}
+.carousel-inner {
+  height: 650px;
+  width: 650px;
+  margin: 50px auto 0;
+  border-radius: 20px;
+  box-shadow: 15px 20px 50px rgb(40, 40, 40) , -15px 20px 50px rgb(40, 40, 40);
 }
 
 .carousel-caption {
   color: #fdfff0;
+  position: absolute;
+  top: 500px
 }
-.carousel-caption > h5 {
+.carousel-caption > h4 {
   margin-bottom: 0;
+  padding-bottom: 5px;
   border-radius: 5px 5px 0 0;
 }
 .carousel-caption > p {
   margin-bottom: 0;
   border-radius: 0 0 5px 5px;
+  font-weight: 400;
 }
-.carousel-caption > h5,
+.carousel-caption > h4,
 .carousel-caption > p {
   background-color: rgb(47 79 79 / 65%);
 }
@@ -161,19 +225,20 @@ nav.nav-top {
   background-color: darkslategray;
 }
 
-.carousel-control-next {
+.carousel-control-next, .carousel-control-prev {
   /* background-color: darkslategray; */
-  left: 635.25px;
+  /* position: right-center; */
+  /* left: 900px; */
 }
 
 .carousel-control-prev {
   /* background-color: darkslategray; */
-  left: -94.25px;
+  /* position: left-center; */
 }
-.hero-gallery {
-  width: 635px;
+/* .hero-gallery {
+  max-height: 650px;
   margin: 50px auto 0;
-}
+} */
 
 .recipe-section {
   margin: 150px 0;
@@ -184,7 +249,7 @@ nav.nav-top {
   border-radius: 20px;
   padding: 20px;
   border: solid 10px;
-  box-shadow: 5px 5px 15px darkslategray;
+  box-shadow: 15px 20px 50px rgb(40, 40, 40) , -15px 20px 50px rgb(40, 40, 40);
 }
 
 .share-btn {
@@ -222,4 +287,11 @@ nav.nav-top {
 
 #connect {
   margin-bottom: 100px;
+}
+
+footer p {
+  margin: 50px 0 0;
+  font-size: 1rem;
+  text-align: center;
+  color: #a23131;
 }

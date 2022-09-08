@@ -1,383 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cook Book</title>
-    <link / rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
-    />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranga:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <header>
-      <nav class="nav-top navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="logo" src="images/logo.png" alt="Website Logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#boxty"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Breakfast
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#porridge">Porridge</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Bacon and Eggs</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#boxty">Boxty</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#boxty"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Main Dish
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#detroit-pizza"
-                      >Detroit Pizza</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#steak-eggs"
-                      >Steak and Eggs</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Lasagne</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#boxty"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dessert
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Baked ricotta cake</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Coconut yoghurt cake</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Peach Crumble</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#connect">Connect</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-dark" type="submit">Search</button>
-            </form>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cook Book</title>
+  <link / rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Fira+Sans:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranga:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav-top navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="images/logo.png" alt="Website Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Breakfast
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#porridge" data-bs-toggle="navbar.collapse">Porridge</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Bacon
+                    and Eggs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#boxty">Boxty</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Main Dish
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#detroit-pizza">Detroit Pizza</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#steak-eggs">Steak and Eggs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Lasagne</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#boxty" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dessert
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Baked ricotta cake</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Coconut yoghurt cake</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Peach Crumble</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#connect">Connect</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
-      <h1>The Most Awesome Cook Book You Can Find on Tinder</h1>
-    </header>
-    <main class="container">
-      <section class="hero-gallery">
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
-          data-bs-ride="false"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+      </div>
+    </nav>
+    <h1>The Most Awesome Cook Book You Can Find on Tinder</h1>
+  </header>
+  <main class="container">
+    <section class="hero-gallery">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <a href="#boxty">
+            <div class="carousel-item">
               <img src="images/boxty.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Boxty</h5>
+                <h4>Boxty</h4>
                 <p>
-                  Some representative placeholder content for the first slide.
+                  A true Irish classic!
                 </p>
               </div>
             </div>
+          </a>
+          <a href="#detroit-pizza">
             <div class="carousel-item">
-              <img
-                src="images/Detroit-Pizza.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
+              <img src="images/Detroit-Pizza.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Detroit Pizza</h5>
+                <h4>Detroit Pizza</h4>
                 <p>
-                  Some representative placeholder content for the second slide.
+                  chewy, bubbly crust and crisp cheesy edges!
                 </p>
               </div>
             </div>
+          </a>
+          <a href="#steak-eggs">
             <div class="carousel-item">
-              <img
-                src="images/steak-and-eggs-.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
+              <img src="images/steak-and-eggs-.jpg" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Steak and Eggs</h5>
+                <h4>Steak and Eggs</h4>
                 <p>
-                  Some representative placeholder content for the third slide.
+                  Perfect steak and eggs every time!
                 </p>
               </div>
             </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          </a>
+          <a href="#porridge">
+            <div class="carousel-item active">
+              <img src="images/porridge-2.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h4>Porridge</h4>
+                <p>
+                  Perfect porridge for a healthy way to start the day.
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
-      </section>
-      <section class="porridge-recipe recipe-section row">
-        <p id="porridge"></p>
-        <h2>Porridge</h2>
-        <p>Perfect porridge for a healthy way to start the day.</p>
-        <div class="col image-content">
-          <img
-            class="recipe-image"
-            src="images/porridge-2.jpg"
-            alt="Porridge with berries"
-          />
-          <div class="recipe-title">Porridge</div>
-          <button type="button" class="btn btn-light share-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-share-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
-              />
-            </svg>
-            Share
-          </button>
-        </div>
-        <div class="col-sm-12 col-lg-6">
-          <div class="ingredients">
-            <h3>Ingredients for one porridge</h3>
-            <ul>
-              <li>40g oats</li>
-              <li>200ml milk or water, or a mixture of the two</li>
-              <li>1 tablespoon of raw honey</li>
-              <li>
-                1 handful of berries(blueberries, blackberries, raspberries)
-              </li>
-              <li>cinnamon powder</li>
-            </ul>
-          </div>
-          <div class="instructions">
-            <h3>Instructions</h3>
-            <ol>
-              <li>Put the oats into a pot and add the milk</li>
-              <li>Use medium heat and stir the the content</li>
-              <li>
-                After the mass reeaches the desired consistence, put it onto a
-                plate
-              </li>
-              <li>Mix the honey under</li>
-              <li>Sprinkle the cinnamon over the porridge</li>
-              <li>
-                Finally add the berries on top and voilà the enjoy your
-                porridge.
-              </li>
-            </ol>
-          </div>
-        </div>
-      </section>
-      <section class="recipe2 recipe-section row">
-        <p id="steak-eggs"></p>
-        <div class="col-sm-12 col-lg-6">
-          <h2>Steak And Eggs</h2>
-          <h3>Ingredients for one serving</h3>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="porridge-recipe recipe-section row">
+      <p id="porridge"></p>
+      <h2>Porridge</h2>
+      <p>Perfect porridge for a healthy way to start the day.</p>
+      <div class="col image-content">
+        <img class="recipe-image" src="images/porridge-2.jpg" alt="Porridge with berries" />
+        <div class="recipe-title">Porridge</div>
+        <button type="button" class="btn btn-light share-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+          </svg>
+          Share
+        </button>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <div class="ingredients">
+          <h3>Ingredients for one porridge</h3>
           <ul>
-            <li>30 Grams Grass Feed Beef</li>
-            <li>2 Small Free Range Eggs</li>
-            <li>2 Garlic Gloves</li>
+            <li>40g oats</li>
+            <li>200ml milk or water, or a mixture of the two</li>
+            <li>1 tablespoon of raw honey</li>
+            <li>
+              1 handful of berries(blueberries, blackberries, raspberries)
+            </li>
+            <li>cinnamon powder</li>
           </ul>
+        </div>
+        <div class="instructions">
           <h3>Instructions</h3>
-          <p>
-            Begin by slicing 30 grams of grass-beef filet in half. Don't remove
-            any fat as this helps give the beef it's cooked texture. Next,
-            thoroughly tenderize both slices with a small wooden tenderizer. Be
-            sure to use greaseproof paper! Prepare a pan with a table-spoon of
-            olive-oil. Add black pepper to the oil and heat the pan to 150
-            degrees celsius. Now carefully place the beef into the pan-adding
-            sea-salt while turning the beef every 30 seconds for 2 minutes.
-            Remove the beef and place each filet on it's own plate. Leave the
-            pan at 150 degrees celsius. Now crush 2 cloves of garlic and
-            sprinkle generously over the beef. Crack 2 eggs into the pan. They
-            will be infused with the juices of the filets. Pour 1/2 a glass of
-            water into the pan and place a lid on the pan for approximately 45
-            seconds. remove the cooked eggs and place each one on a beef slice.
-            And there you have it! Perfect steak and eggs every time!
-          </p>
+          <ol>
+            <li>Put the oats into a pot and add the milk</li>
+            <li>Use medium heat and stir the the content</li>
+            <li>
+              After the mass reeaches the desired consistence, put it onto a
+              plate
+            </li>
+            <li>Mix the honey under</li>
+            <li>Sprinkle the cinnamon over the porridge</li>
+            <li>
+              Finally add the berries on top and voilà the enjoy your
+              porridge.
+            </li>
+          </ol>
         </div>
-        <div class="col image-content">
-          <img class="recipe-image" src="images/steak-and-eggs-.jpg" alt="" />
-          <div class="recipe-title">Steak and Eggs</div>
-          <button type="button" class="btn btn-light share-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-share-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
-              />
-            </svg>
-            Share
-          </button>
-        </div>
-        <div>
-          <ul></ul>
-        </div>
-        <div>
-          <ol></ol>
-        </div>
-      </section>
-      <section class="recipe3 recipe-section row">
-        <p id="detroit-pizza"></p>
-        <h2>Detroit-Style Pizza</h2>
+      </div>
+    </section>
+    <section class="recipe2 recipe-section row">
+      <p id="steak-eggs"></p>
+      <div class="col-sm-12 col-lg-6">
+        <h2>Steak And Eggs</h2>
+        <h3>Ingredients for one serving</h3>
+        <ul>
+          <li>30 Grams Grass Feed Beef</li>
+          <li>2 Small Free Range Eggs</li>
+          <li>2 Garlic Gloves</li>
+        </ul>
+        <h3>Instructions</h3>
         <p>
-          Everything you need to know to make an amazing Detroit-Style Pizza in
-          your own oven! This delicious pan pizza is hugely popular for a
-          reason, and this homemade version will have you feeling like a pro!
-          It’s baked to perfection with a chewy, bubbly crust and crisp cheesy
-          edges. A true Detroit style pizza is baked in a seasoned steel pan.
-          This is my kids absolute favorite pizza and it’s impossible to stop
-          after just one slice.
+          Begin by slicing 30 grams of grass-beef filet in half. Don't remove
+          any fat as this helps give the beef it's cooked texture. Next,
+          thoroughly tenderize both slices with a small wooden tenderizer. Be
+          sure to use greaseproof paper! Prepare a pan with a table-spoon of
+          olive-oil. Add black pepper to the oil and heat the pan to 150
+          degrees celsius. Now carefully place the beef into the pan-adding
+          sea-salt while turning the beef every 30 seconds for 2 minutes.
+          Remove the beef and place each filet on it's own plate. Leave the
+          pan at 150 degrees celsius. Now crush 2 cloves of garlic and
+          sprinkle generously over the beef. Crack 2 eggs into the pan. They
+          will be infused with the juices of the filets. Pour 1/2 a glass of
+          water into the pan and place a lid on the pan for approximately 45
+          seconds. remove the cooked eggs and place each one on a beef slice.
+          And there you have it! Perfect steak and eggs every time!
         </p>
-        <div class="col image-content">
-          <img
-            class="recipe-image"
-            src="images/Detroit-Pizza.jpg"
-            alt="Detroit-Pizza-Image"
-          />
-          <div class="recipe-title">Detroit-Pizza</div>
-          <button type="button" class="btn btn-light share-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-share-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
-              />
-            </svg>
-            Share
-          </button>
-        </div>
-        <div class="col-sm-12 col-lg-6">
-          <h3>Ingredients for one pizza</h3>
+      </div>
+      <div class="col image-content">
+        <img class="recipe-image" src="images/steak-and-eggs-.jpg" alt="" />
+        <div class="recipe-title">Steak and Eggs</div>
+        <button type="button" class="btn btn-light share-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+          </svg>
+          Share
+        </button>
+      </div>
+      <div>
+        <ul></ul>
+      </div>
+      <div>
+        <ol></ol>
+      </div>
+    </section>
+    <section class="recipe3 recipe-section row">
+      <p id="detroit-pizza"></p>
+      <h2>Detroit-Style Pizza</h2>
+      <p>
+        Everything you need to know to make an amazing Detroit-Style Pizza in
+        your own oven! This delicious pan pizza is hugely popular for a
+        reason, and this homemade version will have you feeling like a pro!
+        It’s baked to perfection with a chewy, bubbly crust and crisp cheesy
+        edges. A true Detroit style pizza is baked in a seasoned steel pan.
+        This is my kids absolute favorite pizza and it’s impossible to stop
+        after just one slice.
+      </p>
+      <h3>Ingredients for one pizza</h3>
+      <div class="row">
+        <div class="col col-lg-6 col-sm-12">
           <h5>Dough:</h5>
           <ul>
             <li>236.59 g lukewarm water</li>
@@ -385,6 +292,10 @@
             <li>312.5 g bread flour</li>
             <li>5.5 g ground sea salt</li>
           </ul>
+          <br>
+          <br>
+        </div>
+        <div class="col col-lg-6 col-sm-12">
           <h5>Pizza Sauce:</h5>
           <ul>
             <li>3/4 cup Pizza Sauce</li>
@@ -395,182 +306,174 @@
             <li>85.05 g natural casing Pepperoni , thinly sliced</li>
             <li>25 g freshly shredded parmesan cheese</li>
           </ul>
-          <h3>Instructions</h3>
-          <ol>
-            <li>
-              <strong>Make dough:</strong> Stir all ingredients together in a
-              bowl or stand mixer. Knead for several minutes, until the dough is
-              smooth and elastic.
-            </li>
-            <li>
-              <strong>First rise:</strong> Place in a well-greased bowl, turning
-              once in the bowl to coat in oil, then cover and allow to rise for
-              2 hours. (Don't skimp on the rise times!)
-            </li>
-            <li>
-              <strong>Press into pan:</strong> Oil the bottom and sides of a
-              pizza pan*. Stretch dough into a rectangle and lay into pan(s).
-              Cover and rest for 15 minutes, to allow the gluten to relax.
-              Without handling the dough too much, gently spread the dough all
-              the way to the edges of the pan, poking it into the corners, in a
-              flat even layer (there’s no “crust” edge in Detroit pizza).
-            </li>
-            <li>
-              <strong>Second rise:</strong> Rise again for 2 hours, or until the
-              dough has risen about ⅓ way up the pan.
-            </li>
-            <li>
-              <strong>Preheat oven</strong> to 450 degrees F. I recommend baking
-              the pizza on a pizza stone, or if you don't have a pizza stone,
-              use a baking sheet, and allow it to preheat in the oven.
-            </li>
-            <li>
-              <strong>Add cheese:</strong> sprinkle cheese all over the dough,
-              making sure it covers all the way to the edges.
-            </li>
-            <li>
-              <strong>Add sauce:</strong> spoon pizza sauce into 2-3
-              lines/stripes going down the pan, over cheese—you don't want to
-              cover all the cheese in sauce.
-            </li>
-            <li>
-              <strong>Add pepperoni,</strong> laying it in a single layer over
-              the top. Lightly sprinkle parmesan on top.
-            </li>
-            <li>
-              <strong>Bake</strong> for 15-20 minutes, or until cheese is golden
-              and bubbly. Cool for a few minutes in the pan before slicing into
-              squares.
-            </li>
-          </ol>
         </div>
-      </section>
-      <section class="boxty recipe-section row">
-        <p id="boxty"></p>
-        <h2>Boxty</h2>
-        <p></p>
-        <div class="col-sm-12 col-lg-6">
-          <h3>Ingredients for ten servings</h3>
-          <ul>
-            <li>255g all-purpose flour</li>
-            <li>1 tsp baking powder</li>
-            <li>1 tsp Sea salt</li>
-            <li>225g mashed potatoes, boiled in salted water</li>
-            <li>225g grated raw potato</li>
-            <li>230 ml buttermilk (or more if needed)</li>
-            <li>butter for the pan</li>
-          </ul>
-          <h3>Instructions</h3>
-          <ol>
-            <li>
-              In a small bowl, place the flour, baking powder and salt, set
-              aside.
-            </li>
-            <li>
-              In a large mixing bowl, combine the mashed potatoes with the
-              grated raw potato, then add the flour and mix well.
-            </li>
-            <li>
-              Slowly add the buttermilk and stir gently (do not over mix).
-            </li>
-            <li>
-              The mixture should be like a very firm, thick batter, almost like
-              a dough, so add more buttermilk if needed.
-            </li>
-            <li>
-              Heat a nonstick frying pan over medium-high heat, and add a pat of
-              butter, just before scooping out some of the boxty batter onto the
-              pan.
-            </li>
-            <li>
-              Flatten and shape into a nice, round pancake shape and fry until
-              golden brown on the bottom.
-            </li>
-            <li>
-              Turn and continue to cook until golden brown on top too, turning
-              the heat down if they are browning too quickly (remember there are
-              raw potatoes which need to cook).
-            </li>
-            <li>
-              Continue to add a little butter and fry the boxty until all the
-              batter is finished.
-            </li>
-          </ol>
-        </div>
-        <div class="col image-content">
-          <img
-            class="recipe-image"
-            src="images/boxty.jpg"
-            alt="Irish Potato Cake - Boxty"
-          />
-          <div class="recipe-title">Boxty</div>
-          <button type="button" class="btn btn-light share-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-share-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
-              />
-            </svg>
-            Share
-          </button>
-        </div>
-      </section>
-    </main>
-    <footer id="connect">
-      <nav>
-        <ul class="social-links">
+      </div>
+      <div class="col image-content">
+        <img class="recipe-image" src="images/Detroit-Pizza.jpg" alt="Detroit-Pizza-Image" />
+        <div class="recipe-title">Detroit-Pizza</div>
+        <button type="button" class="btn btn-light share-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+          </svg>
+          Share
+        </button>
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <h3>Instructions</h3>
+        <ol>
           <li>
-            <a href="https://www.facebook.com/" target="_blank"
-              ><svg
-                class="social-media-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="bi bi-facebook"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                /></svg
-            ></a>
+            <strong>Make dough:</strong> Stir all ingredients together in a
+            bowl or stand mixer. Knead for several minutes, until the dough is
+            smooth and elastic.
           </li>
+          <br>
           <li>
-            <a href="https://www.instagram.com/" target="_blank"
-              ><svg
-                class="social-media-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="bi bi-instagram"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                /></svg
-            ></a>
+            <strong>First rise:</strong> Place in a well-greased bowl, turning
+            once in the bowl to coat in oil, then cover and allow to rise for
+            2 hours. (Don't skimp on the rise times!)
           </li>
+          <br>
           <li>
-            <a href="https://www.twitter.com/" target="_blank"
-              ><svg
-                class="social-media-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                fa-8x
-                class="bi bi-twitter"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                /></svg
-            ></a>
+            <strong>Press into pan:</strong> Oil the bottom and sides of a
+            pizza pan*. Stretch dough into a rectangle and lay into pan(s).
+            Cover and rest for 15 minutes, to allow the gluten to relax.
+            Without handling the dough too much, gently spread the dough all
+            the way to the edges of the pan, poking it into the corners, in a
+            flat even layer (there’s no “crust” edge in Detroit pizza).
           </li>
+          <br>
+          <li>
+            <strong>Second rise:</strong> Rise again for 2 hours, or until the
+            dough has risen about ⅓ way up the pan.
+          </li>
+          <br>
+          <li>
+            <strong>Preheat oven</strong> to 450 degrees F. I recommend baking
+            the pizza on a pizza stone, or if you don't have a pizza stone,
+            use a baking sheet, and allow it to preheat in the oven.
+          </li>
+          <br>
+          <li>
+            <strong>Add cheese:</strong> sprinkle cheese all over the dough,
+            making sure it covers all the way to the edges.
+          </li>
+          <br>
+          <li>
+            <strong>Add sauce:</strong> spoon pizza sauce into 2-3
+            lines/stripes going down the pan, over cheese—you don't want to
+            cover all the cheese in sauce.
+          </li>
+          <br>
+          <li>
+            <strong>Add pepperoni,</strong> laying it in a single layer over
+            the top. Lightly sprinkle parmesan on top.
+          </li>
+          <br>
+          <li>
+            <strong>Bake</strong> for 15-20 minutes, or until cheese is golden
+            and bubbly. Cool for a few minutes in the pan before slicing into
+            squares.
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="boxty recipe-section row">
+      <p id="boxty"></p>
+      <h2>Boxty</h2>
+      <p></p>
+      <div class="col-sm-12 col-lg-6">
+        <h3>Ingredients for ten servings</h3>
+        <ul>
+          <li>255g all-purpose flour</li>
+          <li>1 tsp baking powder</li>
+          <li>1 tsp Sea salt</li>
+          <li>225g mashed potatoes, boiled in salted water</li>
+          <li>225g grated raw potato</li>
+          <li>230 ml buttermilk (or more if needed)</li>
+          <li>butter for the pan</li>
         </ul>
-      </nav>
-    </footer>
-    <script src="main.js"></script>
-  </body>
+        <h3>Instructions</h3>
+        <ol>
+          <li>
+            In a small bowl, place the flour, baking powder and salt, set
+            aside.
+          </li>
+          <li>
+            In a large mixing bowl, combine the mashed potatoes with the
+            grated raw potato, then add the flour and mix well.
+          </li>
+          <li>
+            Slowly add the buttermilk and stir gently (do not over mix).
+          </li>
+          <li>
+            The mixture should be like a very firm, thick batter, almost like
+            a dough, so add more buttermilk if needed.
+          </li>
+          <li>
+            Heat a nonstick frying pan over medium-high heat, and add a pat of
+            butter, just before scooping out some of the boxty batter onto the
+            pan.
+          </li>
+          <li>
+            Flatten and shape into a nice, round pancake shape and fry until
+            golden brown on the bottom.
+          </li>
+          <li>
+            Turn and continue to cook until golden brown on top too, turning
+            the heat down if they are browning too quickly (remember there are
+            raw potatoes which need to cook).
+          </li>
+          <li>
+            Continue to add a little butter and fry the boxty until all the
+            batter is finished.
+          </li>
+        </ol>
+      </div>
+      <div class="col image-content">
+        <img class="recipe-image" src="images/boxty.jpg" alt="Irish Potato Cake - Boxty" />
+        <div class="recipe-title">Boxty</div>
+        <button type="button" class="btn btn-light share-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+          </svg>
+          Share
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer id="connect">
+    <nav>
+      <ul class="social-links">
+        <li>
+          <a href="https://www.facebook.com/" target="_blank"><svg class="social-media-icon"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"><svg class="social-media-icon"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/" target="_blank"><svg class="social-media-icon"
+              xmlns="http://www.w3.org/2000/svg" fill="currentColor" fa-8x class="bi bi-twitter" viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg></a>
+        </li>
+      </ul>
+    </nav>
+    <p>Copyright © 2022 - LuFiZaJe </p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
 </html>
