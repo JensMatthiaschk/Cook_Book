@@ -12,7 +12,7 @@ h1 {
   font-size: 6rem;
   font-weight: 900;
   margin: 150px 0 0;
-  text-align: center;
+
 }
 nav .logo {
   width: 50px;
@@ -44,12 +44,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* box-shadow: inset 0 0 0 1000px rgba(161, 221, 112, 0.8); */
   color: darkslategray;
   line-height: 1.75rem;
   font-size: 22px;
   font-weight: 500;
   font-family: "Fira Sans", sans-serif;
+  margin: 0 auto;
 }
 
 h2 {
@@ -65,12 +65,12 @@ h3 {
 }
 
 nav.nav-top {
-  position: fixed;
+  /* position: fixed;        //easily done with .fixed-top bootstrap class
   top: 0;
   width: 100%;
-  padding: 0 80px;
+  padding: 0 80px; */
   background-color: rgba(232, 236, 213, 0.8);
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .nav-item {
@@ -149,16 +149,21 @@ body {
     width: 100%;
   }
 
-.carousel-inner > .carousel-item > img {
-  max-height: 400px;
-}
-.carousel-inner {
-  max-height: 400px;
-  max-width: 400px;
+.carousel-caption > h4 {
+  font-size: 26px;
 }
 
-.recipe-section {
-  margin: 50px 0;
+.carousel-caption > p {
+  font-size: 18px;
+}
+
+.carousel-caption {
+  top: 200px
+}
+
+.carousel-caption > h4,
+.carousel-caption > p {
+  background-color: rgb(47 79 79 / 65%);
 }
 
 .social-media-icon {
@@ -182,24 +187,22 @@ body {
 }
 /* Media querie end */
 
-.carousel-inner > .carousel-item > img {
+/* .carousel-inner > .carousel-item > img {
   object-fit: cover;
-  width: 650px;
-  height: 650px;
   overflow: hidden;
-}
+} */
+
 .carousel-inner {
-  height: 650px;
-  width: 650px;
   margin: 50px auto 0;
   border-radius: 20px;
-  box-shadow: 15px 20px 50px rgb(40, 40, 40) , -15px 20px 50px rgb(40, 40, 40);
+  box-shadow: 15px 20px 40px rgb(40, 40, 40) , -15px 20px 40px rgb(40, 40, 40);
+  max-width: 800px;
 }
 
 .carousel-caption {
   color: #fdfff0;
   position: absolute;
-  top: 500px
+  top: 500px;
 }
 .carousel-caption > h4 {
   margin-bottom: 0;
@@ -225,21 +228,6 @@ body {
   background-color: darkslategray;
 }
 
-.carousel-control-next, .carousel-control-prev {
-  /* background-color: darkslategray; */
-  /* position: right-center; */
-  /* left: 900px; */
-}
-
-.carousel-control-prev {
-  /* background-color: darkslategray; */
-  /* position: left-center; */
-}
-/* .hero-gallery {
-  max-height: 650px;
-  margin: 50px auto 0;
-} */
-
 .recipe-section {
   margin: 150px 0;
   background-image: url("images/cutting-board.jpg");
@@ -249,7 +237,7 @@ body {
   border-radius: 20px;
   padding: 20px;
   border: solid 10px;
-  box-shadow: 15px 20px 50px rgb(40, 40, 40) , -15px 20px 50px rgb(40, 40, 40);
+  box-shadow: 15px 20px 40px rgb(40, 40, 40) , -15px 20px 40px rgb(40, 40, 40);
 }
 
 .share-btn {
@@ -268,30 +256,38 @@ body {
   position: relative;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  list-style-type: none;
-}
-
-.social-links a {
-  text-decoration: none;
-}
-
 .social-media-icon {
   color: #a23131;
-  margin: 0 40px;
-  width: 50px;
-}
-
-#connect {
-  margin-bottom: 100px;
 }
 
 footer p {
-  margin: 50px 0 0;
   font-size: 1rem;
-  text-align: center;
   color: #a23131;
+}
+
+#boxty-img {
+  background-image: url("images/boxty.jpg");
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+}
+
+#detroit-pizza-img {
+  background-image: url("images/Detroit-Pizza.jpg");
+  height: 650px;
+  background-size: cover;
+  background-position: center center;
+}
+
+#steak-eggs-img {
+  background-image: url("images/steak-and-eggs-.jpg");
+  height: 650px;
+  background-size: cover;
+  background-position: center center;
+}
+
+#porridge-img {
+  background-image: url("images/porridge-2.jpg");
+  height: 650px;
+  background-size: cover;
 }
